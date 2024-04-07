@@ -4,8 +4,8 @@ import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import valdirsillva.com.nlwpassin.domain.checkin.Checkin;
+import valdirsillva.com.nlwpassin.domain.checkin.CheckIn;
 
-public interface CheckinRepository extends JpaRepository<Checkin, Integer> {
-    Optional<Checkin> findByAttendeeId(String id);
+public interface CheckinRepository extends JpaRepository<CheckIn, Integer> {
+    Optional<CheckIn> findByAttendeeId(String id);
 }
